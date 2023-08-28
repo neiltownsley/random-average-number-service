@@ -3,8 +3,6 @@ import request from 'supertest';
 import app from '../../src/app';
 
 describe('averageRandomNumberRoute', (): void => {
-  beforeEach(() => {});
-
   it('When averageRandomNumberRoute is called, and external random number service is called, should return a random number list, and average of the number list is returned in response', async (): Promise<void> => {
     const response: request.Response = await request(app).get(
       randomAverageNumberPath,
