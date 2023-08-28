@@ -4,7 +4,7 @@
 
 - The target API returns an object that contains a random number `[{ max: 100, min: 0, random: 23, status: success }]`
 
-- This number is pushed in a number list promise
+- The random number is pushed in to a number list and the list of numbers are store in a promise
 
 - When the random average number endpoint is called `/random-average-number` it takes the number list stored in the promise and builds a json response object
 
