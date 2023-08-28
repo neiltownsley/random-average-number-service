@@ -18,7 +18,6 @@ app
     );
   })
   .on('error', (err: ServerError): void => {
-    console.log(err.code);
     pino().error(err);
     if (err.code === 'EADDRINUSE') {
       process.exit();
