@@ -15,7 +15,7 @@
 1. You will need the latest LTS version of Node JS `18.17.1`
 2. `npm run build`
 3. `npm run start`
-4. When you are ready you can go hit the service endpoint [http://localhost:8005/random-average-number](http://localhost:8005/random-average-number) `http://localhost:8005/random-average-number`
+4. When you are ready you can go hit the service endpoint [http://localhost:8005/random-average-number](http://localhost:8005/random-average-number)
 5. You should see the average random number response`{randomNumbers:[69,19,1,55],averageNumber:36,averageNumberFixed:36}`
 6. If you hit the endpoint again you will see an increment in the results
 
