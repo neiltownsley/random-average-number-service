@@ -1,7 +1,7 @@
 import { RandomNumberResponse } from './RandomNumberResponse';
 import axios, { AxiosPromise } from 'axios';
-export async function externalRequestHandler(
+export const externalRequestHandler = async (
   url: string,
-): AxiosPromise<RandomNumberResponse[]> {
+): AxiosPromise<RandomNumberResponse[]> => {
   return await axios.get(url);
-}
+};

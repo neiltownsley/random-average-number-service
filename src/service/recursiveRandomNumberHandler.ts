@@ -7,7 +7,7 @@ import { randomNumberUrl } from '../configurationConstants';
 dotenv.config();
 
 const randomNumberList: number[] = [];
-export async function recursiveRandomNumberHandler(): Promise<number[]> {
+export const recursiveRandomNumberHandler = async (): Promise<number[]> => {
   const axiosResponse: AxiosResponse<RandomNumberResponse[]> =
     await externalRequestHandler(randomNumberUrl);
   const randomNumberResponse: RandomNumberResponse[] = axiosResponse.data;
